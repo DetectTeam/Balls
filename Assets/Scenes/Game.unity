@@ -370,6 +370,8 @@ GameObject:
   - component: {fileID: 1100748695}
   - component: {fileID: 1100748694}
   - component: {fileID: 1100748697}
+  - component: {fileID: 1100748698}
+  - component: {fileID: 1100748699}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -479,3 +481,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8500001, y: 4.15}
   m_EdgeRadius: 0
+--- !u!50 &1100748698
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100748693}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1100748699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100748693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efca95a05eebd4eaeb04f8abd0281dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitsToMove: 10
+  EnemySpeed: 1500
+  _isFacingRight: 0
+  _moveRight: 0
